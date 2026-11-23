@@ -2,6 +2,7 @@
 import './App.css'
 import { useState, useEffect } from 'react'
 import { Header } from './components/Header'
+import { Hero } from './components/Hero'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
@@ -22,11 +23,11 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-main text-content transition-colors duration-300">
+    <div className="min-h-screen font-primary bg-main text-content transition-colors duration-200">
       <Header theme={theme} toggleTheme={toggleTheme} />
 
       <main>
-        {}
+        <Hero/>
       </main>
 
     </div>
