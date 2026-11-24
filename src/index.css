@@ -5,7 +5,7 @@
 
 :root {
   --bg-main: #f8fafc;
-  --bg-surface: #e0e1ee;
+  --bg-surface: #f2f2f3ea;
   --text-main: #1f2937;
   --text-muted: #4b5563;
   --accent: #0091d5;
@@ -13,7 +13,7 @@
 
 .dark {
   --bg-main: #121212;
-  --bg-surface: #1f1f1f;
+  --bg-surface: #161616f0; 
   --text-main: #f8fafc;
   --text-muted: #e0e1ee;
   --accent: #0091d5;

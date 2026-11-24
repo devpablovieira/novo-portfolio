@@ -1,27 +1,18 @@
-import  moon from "../assets/moon.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export function Header({ theme, toggleTheme}){
+    const icone = theme === 'dark' ? faMoon : faSun;
     return (
-        <header className="flex justify-between items-center p-6 shadow-sm">
-            <div className="text-xl font-bold text-muted">
-                <img src={moon} alt="Moon" />
-            </div>
-            <nav>
-                {
-                 
-                }
+        <header className="flex justify-between items-center p-7 pl-10 pr-10 shadow-sm bg-surface sticky top-0 z-50">
+            <FontAwesomeIcon icon={icone} alt={theme} id="toggle-icon" className="w-10 h-10 hover:opacity-80 cursor-pointer" onClick={toggleTheme}/>     
+
+            <nav className="flex gap-5">
+                <a href="index.js">Início</a>
+                <a href="projetos.js">Projetos</a>
+                <a href="sobre.js">Sobre</a>
+                <a href="contato.js">Contato</a>
             </nav>
-
-            <p className="mb-8 text-content">
-                O tema atual é: <span className="text-accent font-bold">{theme}</span>
-            </p>
-
-            <button
-                onClick = {toggleTheme}
-                className="px-6 py-2 bg-surface text-content rounded-lg shadow-md border border-accent hover:opacity-80 transition-opacity"
-            >
-                Trocar Tema
-            </button>
         </header>
     )
 }
