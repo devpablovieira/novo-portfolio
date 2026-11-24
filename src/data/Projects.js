@@ -8,7 +8,7 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Sistema de Gerenciamento de uma Artesâ",
+        title: "ArtManager",
         description: "Sistema integrado para controle de estoque de materiais e um catálogo digital interativo para clientes",
         technologies: ["Java", "JUnit", "Maven", "Jackson"],
         link: "https://github.com/devpablovieira/Trabalho-Modelagem-de-Sistemas"

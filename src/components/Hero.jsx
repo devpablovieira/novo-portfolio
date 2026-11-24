@@ -2,7 +2,7 @@ import profilePic from "../assets/foto.jpg"
 
 export function Hero() {
     return (
-        <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-6 py-16 max-w-6xl mx-auto">
+        <section  id="main" className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-6 py-16 max-w-6xl mx-auto">
             <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
                 <h2 className="text-xl md:text-2xl text-accent font-semibold mb-2">
                 Olá, eu sou

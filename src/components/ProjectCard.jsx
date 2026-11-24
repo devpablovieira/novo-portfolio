@@ -1,6 +1,6 @@
 export function ProjectCard({ project }) {
     return (
-        <div className="bg-surface rounded-xl shadow-md flex flex-col justify-between border border-transparent hover:border-accent transition-all duration-300">
+        <div className="bg-main rounded-xl shadow-md flex flex-col justify-between border border-transparent hover:border-accent transition-all duration-300">
             <div className="p-6">
                 <h3 className = "text-xl font-bold text-content mb-2">{project.title}</h3>
                 <p className="text-muted text-sm mb-4">{project.description}</p>
@@ -13,9 +13,11 @@ export function ProjectCard({ project }) {
                     ))}
                 </div>
             </div>
-            <a href={project.githubUrl} target="_blank" rel="noreferrer" className="text-sm font-medium text-content hover:text-accent transition-colors">
-            Código (GitHub)
-            </a>
+            <div className="px-6 pb-6">
+                <a href={project.link} target="_blank" rel="noreferrer" className="text-sm font-medium text-content hover:text-accent transition-colors">
+                Código (GitHub)
+                </a>
+            </div>
         </div>
     )
 }

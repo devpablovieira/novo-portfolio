@@ -3,9 +3,10 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Projects } from './components/Projects'
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
 
   useEffect(() => {
     if (theme == 'dark'){
@@ -28,6 +29,7 @@ function App() {
 
       <main>
         <Hero/>
+        <Projects/>
       </main>
 
     </div>

@@ -8,8 +8,8 @@ export function Header({ theme, toggleTheme}){
             <FontAwesomeIcon icon={icone} alt={theme} id="toggle-icon" className="w-10 h-10 hover:opacity-80 cursor-pointer" onClick={toggleTheme}/>     
 
             <nav className="flex gap-5">
-                <a href="index.js">Início</a>
-                <a href="projetos.js">Projetos</a>
+                <a href="/">Início</a>
+                <a href="#projetos">Projetos</a>
                 <a href="sobre.js">Sobre</a>
                 <a href="contato.js">Contato</a>
             </nav>
